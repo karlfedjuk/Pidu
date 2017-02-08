@@ -14,7 +14,7 @@ namespace Pidu
 
         public void lisaInimene(string inimene)
         {
-            if (kasmahubVeel()==true)
+            if (kasMahubVeel()==true)
             {
                 inimesed.Add(inimene);
                 
@@ -34,22 +34,25 @@ namespace Pidu
         }
 
 
-        public Boolean kasmahubVeel()
+        public Boolean kasMahubVeel()
         {
-            Boolean kontroll 
+
+            Boolean kontroll = false;
+            return kontroll;
+
         }
 
         public string kuvaInimesed()
         {
             string rahvas = "";
 
-            for (int = 0; i < inimesed.count; i++)
+            for (int = 0; i < inimesed.Count; i++)
             {
                 rahvas = rahvas + inimesed[i] + System.Environment.NewLine;
             }
 
             {
-                return inimesed;
+                return rahvas;
             }
         }
     }
